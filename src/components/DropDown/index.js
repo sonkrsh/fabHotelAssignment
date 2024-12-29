@@ -11,7 +11,7 @@ import {shallowEqual, useDispatch, useSelector} from 'react-redux';
 import {setNoOFDays} from '../../containers/HomeScreen/reducer';
 import {DAYS_OPTIONS} from '../../utils/constants';
 
-const WeatherUI = () => {
+const DropDown = () => {
   const dispatch = useDispatch();
   const {noOfdays} = useSelector(
     state => ({
@@ -110,4 +110,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default WeatherUI;
+export default DropDown;

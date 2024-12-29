@@ -12,7 +12,7 @@ import Loader from '../../components/Loader';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import {getWeatherForecast, getWeatherForecastSuccess} from './reducer';
 
-const WeatherUI = () => {
+const HomeScreen = () => {
   const dispatch = useDispatch();
 
   const {forecastValue, loading, noOfdays} = useSelector(
@@ -109,4 +109,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default WeatherUI;
+export default HomeScreen;

@@ -3,12 +3,7 @@ import {View, ActivityIndicator, StyleSheet, Modal} from 'react-native';
 
 const LoadingScreen = ({loading = false}) => {
   return (
-    <Modal
-      transparent
-      animationType="none"
-      visible={loading}
-      onRequestClose={() => {}} // Prevents dismissal via hardware back button
-    >
+    <Modal transparent animationType="none" visible={loading}>
       <View style={styles.container}>
         <View style={styles.loaderContainer}>
           <ActivityIndicator size="large" color="#ffffff" />

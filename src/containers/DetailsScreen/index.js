@@ -5,7 +5,7 @@ import HourlyForecast from '../../components/HourlyForecast';
 import {shallowEqual, useSelector} from 'react-redux';
 import AstroInfo from '../../components/Astro';
 
-const WeatherUI = ({route: params}) => {
+const DetailsScreen = ({route: params}) => {
   const {forecastValue} = useSelector(
     state => ({
       forecastValue: state.homeScreen.forecastValue,
@@ -49,4 +49,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default WeatherUI;
+export default DetailsScreen;

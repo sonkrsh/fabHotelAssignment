@@ -10,7 +10,7 @@ import {shallowEqual, useDispatch, useSelector} from 'react-redux';
 import {SEARCH, SEARCH_ICON} from '../../utils/constants';
 import debounce from 'lodash.debounce';
 
-const WeatherUI = () => {
+const Header = () => {
   const [searchVisibility, setSearchVisibility] = useState(false);
 
   const dispatch = useDispatch();
@@ -116,4 +116,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default WeatherUI;
+export default Header;

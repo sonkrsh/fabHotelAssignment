@@ -7,8 +7,6 @@ import {
   TouchableOpacity,
   StyleSheet,
   ActivityIndicator,
-  Keyboard,
-  TouchableWithoutFeedback,
 } from 'react-native';
 import {useDispatch} from 'react-redux';
 import {clearSearchValue} from '../../containers/HomeScreen/reducer';

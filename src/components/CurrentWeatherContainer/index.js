@@ -4,7 +4,7 @@ import {View, Text, StyleSheet, Image} from 'react-native';
 import {CHANCE_OF_RAIN, HUMIDITY, UV_INDEX} from '../../utils/constants';
 import backgroundcolor from '../../utils/weatherBAckgroundColor';
 
-const WeatherUI = ({forecastValue, location}) => {
+const CurrentWeatherContainer = ({forecastValue, location}) => {
   const colotText =
     forecastValue?.day?.condition?.text === 'Sunny' ? '#000000' : '#FFF';
   return (
@@ -90,4 +90,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default WeatherUI;
+export default CurrentWeatherContainer;

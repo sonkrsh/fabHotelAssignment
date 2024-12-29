@@ -1,6 +1,5 @@
 import React, {useState, useEffect, useRef} from 'react';
 import {
-  View,
   Text,
   Animated,
   StyleSheet,
@@ -22,6 +21,7 @@ const Toast = ({
     if (message) {
       showToast();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [message]);
 
   const showToast = () => {

@@ -1,11 +1,10 @@
 import React, {useState} from 'react';
 import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 import {shallowEqual, useSelector} from 'react-redux';
-import HourlyForecast from '../../components/HourlyForecast';
 import {DATE, MAX_MIN, RAIN_PERCENTAGE} from '../../utils/constants';
 import {useNavigation} from '@react-navigation/native';
 
-const WeatherUI = () => {
+const WeeklyForecast = () => {
   const [visibleIndex, setVisibleIndex] = useState(null);
 
   const navigation = useNavigation();
@@ -100,4 +99,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default WeatherUI;
+export default WeeklyForecast;

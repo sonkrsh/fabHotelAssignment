@@ -10,7 +10,7 @@ import {
 import {NEXT_FEW_HOURS} from '../../utils/constants';
 import backgroundcolor from '../../utils/weatherBAckgroundColor';
 
-const WeatherUI = ({hour}) => {
+const HourlyForecast = ({hour}) => {
   return (
     <View style={styles.hourlyContainer}>
       <Text style={styles.hourlyTitle}>{NEXT_FEW_HOURS}</Text>
@@ -74,4 +74,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default WeatherUI;
+export default HourlyForecast;
