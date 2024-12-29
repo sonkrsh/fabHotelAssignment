@@ -1,0 +1,15 @@
+export const SEARCH_ICON = '🔍';
+export const SEARCH = 'Search';
+export const PLEASE_SELECT_CITY = 'Please search your city';
+export const DATE = 'Date';
+export const MAX_MIN = 'Max/Min';
+export const RAIN_PERCENTAGE = 'Rain%';
+export const NEXT_FEW_HOURS = 'Next few hours';
+export const DAYS_OPTIONS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
+export const HUMIDITY = '💦 Humidity:';
+export const UV_INDEX = '☀️ UV Index:';
+export const VISIBILITY = 'Visibility:';
+export const PRESSURE = 'Pressure:';
+export const LAST_UPDATES = 'Last Updated:';
+export const CHANCE_OF_RAIN = 'Chance Of Rain';
+export const DEFAULT_REGION = 'Del';
