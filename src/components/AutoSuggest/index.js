@@ -38,8 +38,6 @@ const AutoSuggest = ({
   };
 
   const handleSuggestionSelect = value => {
-    console.log('==value', value);
-
     setQuery(value);
     dispatch(clearSearchValue([]));
     setShowSuggestions(false); // Hide suggestions after selection

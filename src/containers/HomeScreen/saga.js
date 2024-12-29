@@ -12,8 +12,6 @@ import objectToQueryString from '../../utils/objectToQueryString';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 function* getSearchValueSaga({payload}) {
-  console.log('==payload', payload);
-
   try {
     const options = {
       url: `search.json?q=${payload}&key=e58d810dca3744e5b24135829242712`,

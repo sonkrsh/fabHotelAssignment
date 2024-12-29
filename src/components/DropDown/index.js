@@ -8,14 +8,18 @@ import {
   FlatList,
 } from 'react-native';
 import {shallowEqual, useDispatch, useSelector} from 'react-redux';
-import {setNoOFDays} from '../../containers/HomeScreen/reducer';
+import {
+  getWeatherForecast,
+  setNoOFDays,
+} from '../../containers/HomeScreen/reducer';
 import {DAYS_OPTIONS} from '../../utils/constants';
 
 const DropDown = () => {
   const dispatch = useDispatch();
-  const {noOfdays} = useSelector(
+  const {noOfdays, forecastValue} = useSelector(
     state => ({
       noOfdays: state.homeScreen.noOfdays,
+      forecastValue: state.homeScreen.forecastValue,
     }),
     shallowEqual,
   );
@@ -25,6 +29,13 @@ const DropDown = () => {
   const handleSelectOption = value => {
     dispatch(setNoOFDays(value));
     setDropdownVisible(false);
+
+    const queryObject = {
+      q: `${forecastValue.location.region}, ${forecastValue.location.country}`,
+      days: value,
+    };
+
+    dispatch(getWeatherForecast(queryObject));
   };
 
   return (
