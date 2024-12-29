@@ -62,7 +62,7 @@ const AutoSuggest = ({
           value={query}
           onChangeText={handleInputChange}
           placeholderTextColor="white"
-          // onSubmitEditing={() => handleSuggestionSelect({region: query})}
+          onSubmitEditing={() => handleSuggestionSelect({region: query})}
           onFocus={() => setShowSuggestions(true)}
           {...inputProps}
         />

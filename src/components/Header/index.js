@@ -42,9 +42,10 @@ const Header = () => {
   // Handle suggestion selection
   const handleSuggestionSelect = value => {
     const queryObject = {
-      q: `${value?.region}, ${value?.country}`,
+      q: `${value?.region} ${value?.country ? `, ${value?.country}` : ''}`,
       days: noOfDays,
     };
+
     setSearchVisibility(false);
     dispatch(getWeatherForecast(queryObject));
   };
